@@ -1,0 +1,73 @@
+Lists
+
+Consider a list (list = []). You can perform the following commands:
+
+insert i e: Insert integer  at position .
+print: Print the list.
+remove e: Delete the first occurrence of integer .
+append e: Insert integer  at the end of the list.
+sort: Sort the list.
+pop: Pop the last element from the list.
+reverse: Reverse the list.
+Initialize your list and read in the value of  followed by  lines of commands where each command will be of the  types listed above. Iterate through each command in order and perform the corresponding operation on your list.
+
+Input Format
+
+The first line contains an integer, , denoting the number of commands.
+Each line  of the  subsequent lines contains one of the commands described above.
+
+Constraints
+
+The elements added to the list must be integers.
+Output Format
+
+For each command of type print, print the list on a new line.
+
+Sample Input 0
+
+12
+insert 0 5
+insert 1 10
+insert 0 6
+print
+remove 6
+append 9
+append 1
+sort
+print
+pop
+reverse
+print
+Sample Output 0
+
+[6, 5, 10]
+[1, 5, 9, 10]
+[9, 5, 1]
+
+
+
+Solution:
+
+N = int(input())
+l=[]
+for i in range(N):
+    out=input().split()
+    if(out[0]=='insert'):
+        index=int(out[1])
+        element=int(out[2])
+        l.insert(index,element)
+    if(out[0]=='print'):
+        print(l)
+    if(out[0]=='append'):
+        element=int(out[1])
+        l.append(element)
+    if(out[0]=='sort'):
+        l.sort()
+    if(out[0]=='pop'):
+        l.pop()    
+    if(out[0]=='reverse'):
+        l.reverse() 
+    if(out[0]=='remove'):
+        element=int(out[1])
+        l.remove(element)       
+  
