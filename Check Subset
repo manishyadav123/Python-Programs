@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+t=int(input())
+for i in range(t):
+    s_a=int(input())
+    set_a=set(map(int,input().split()))
+    s_b=int(input())
+    set_b=set(map(int,input().split()))
+    out=set_a.issubset(set_b)
+    if(out):
+        print("True")
+    else:
+        print("False")    
