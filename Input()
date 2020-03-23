@@ -1,0 +1,3 @@
+xandk=input().split()
+x=int(xandk[0])
+print(eval(input())==int(xandk[1]))
