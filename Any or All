@@ -1,0 +1,24 @@
+#simple solution without using any or all
+
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+mylist=input().split()
+count=0
+for i in mylist:
+    if(int(i)>0):
+        count=count+1
+ans=0        
+if(count==len(mylist)): 
+    for i in mylist:
+        if(int(i)<10):
+            print("True")
+            ans=1
+            break
+        
+if(ans==0):
+    print("False")
+            
+
+         
+
+        
