@@ -1,0 +1,4 @@
+import numpy
+p= map(float,raw_input().split())
+v=input()
+print numpy.polyval(p,v)
