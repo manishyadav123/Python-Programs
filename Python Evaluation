@@ -1,0 +1,2 @@
+#In python 3 it can be solved easily by using eval() method:
+eval(input())
