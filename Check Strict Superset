@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+
+A=set(map(int, input().split()))
+for _ in range(int(input())):
+    new=set(map(int, input().split()))
+    if A.issuperset(new) != True or len(A) == len(new): 
+        print(False)
+        break 
+else:
+    print(True)
